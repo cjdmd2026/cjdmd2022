@@ -1,0 +1,70 @@
+/* <div class="motion_vd_wrap">
+<video class="motion_vd" muted autoplay loop>
+<source src="img/motion_home.mp4" type="video/mp4">
+</video>
+</div> */
+
+.motion_vd_wrap {
+    width: 100%;
+    height: 1080px; 
+    /* height: 775px; */
+    /* height: 970px; */
+    overflow: hidden;
+    margin: 0px auto; 
+    position: relative;
+}
+
+.motion_vd_pc {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline;
+    z-index: 1;
+}
+
+.motion_vd_mobile {
+    /*width: 100%;*/
+    /* height: 100%; */
+    object-fit: cover;
+    display: none;
+    z-index: 0;
+}
+/* @media(max-width: 1920px) {
+    .motion_vd_wrap {
+        width: 100%;
+        height: auto;
+    }
+    .motion_vd_pc {
+        width: 100%;
+        height: 790px;
+        z-index: 0;
+    }
+} */
+
+@media(max-width: 1680px) {
+    .motion_vd_wrap {
+        width: 100%;
+        height: auto;
+    }
+    .motion_vd_pc {
+        width: 100%;
+        height: 790px;
+        z-index: 0;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .motion_vd_wrap {
+        width: 100%;
+        height: auto;
+    }
+    .motion_vd_pc {
+        display: none;
+        z-index: 0;
+    }
+    
+    .motion_vd_mobile {
+        display: inline;
+        z-index: 1;
+    }
+}
